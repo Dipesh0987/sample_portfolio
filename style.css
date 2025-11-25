@@ -177,6 +177,61 @@ section {
     line-height: 1.6;
 }
 
+.intro li{
+    list-style: none;
+}
+
+.intro a{
+    color: #4CAF50;
+}
+
+.intro a:hover{
+    font-size: 1.4rem;
+}
+
+form label{
+    margin-bottom: 8px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+form textarea {
+    height: 120px;
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+button{
+    display: flex;
+    padding: 8px 8px 8px 8px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background: #4CAF50;
+}
+button:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    background-color: #4dff54;
+    transform: translateY(2px);
+}
+
+.links a i{
+    font-size: 4rem;
+    padding: 7px;
+    color: #4CAF50;
+}
+
 footer {
     grid-area: footer;
     background-color: rgba(26, 26, 93, 0.95);

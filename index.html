@@ -4,7 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Advanced Frontend</title>
+    <link rel="icon" type="image/png" href="cv.png"> 
 	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <video autoplay loop muted playsinline id="vback">
@@ -122,13 +124,83 @@
             	<div class="interest-grid">
             		<div class="interest-card">
             			<h4>Weather_App</h4>
-            			<!-- <img src="weather.png"> -->
+            			<img src="weather.png" width="65%">
+                        <div class="intro">
+                                This is a web application where a user can get the weather details of any city in the world. The data is being fetched using the weather API.
+                                <p>
+                                    Features:
+                                    <ul>
+                                        <li>Live weather updates using API</li>
+                                        <li>Displays temperature, humidity, wind, and pressure</li>
+                                        <li>Responsive and user-friendly interface</li>
+                                    </ul>
+                                </p>
+                                <br>
+                                <a href="https://dipesh0987.github.io/Weather-application/" target="_blank">Weather-app</a>
+                                <br>
+                                <br>
+                                <p>Author</p>
+                                <i>Dipesh Kishor Chhetri</i>
+                        </div>
             		</div>
             		<div class="interest-card">
             			<h4>Portfolio</h4>
-            			<!-- <img src="port.png"> -->
-            		</div>          		
+            			<img src="port.png" width="65%" height="25%">
+                        <div class="intro">
+                                A responsive portfolio website built to showcase my skills, projects, and experience. Features a clean design with smooth navigation and interactive elements.
+                                <p>
+                                    Features:
+                                    <ul>
+                                        <li>Fully responsive design for all devices</li>
+                                        <li>Clean UI with smooth animation</li>
+                                        <li>Interactive elements and hover effects</li>
+                                    </ul>
+                                </p>
+                                <br>
+                                <a href="https://dipesh0987.github.io/hello/" target="_blank">Portfolio</a>
+                                <br>
+                                <br>
+                                <p>Author</p>
+                                <i>Dipesh Kishor Chhetri</i>
+                            </div>
+            		</div>		
             	</div>
+            </section>
+            <section id="contact">
+                <h4 class="section-title">Contact me</h4>
+                <div class="interest-grid">
+                    <div class="interest-card">
+                        <form id="contactForm">                    
+                            <input type="text" id="name" name="Name" placeholder="Name" required>
+                            <br>
+                            <input type="text" id="email" name="Email" placeholder="Email" required>
+                            <br>
+                            <textarea name="Message" id="message" placeholder="Write your message here" required></textarea>
+                            <br>
+                            <button>Send</button>
+
+                            <p id="error" style="color: red;  font-size: 1.5rem;"></p>
+                            <p id="success" style="color: #4CAF50; font-size: 1.5rem;"></p>
+                        </form>
+                    </div>
+                    <div class="interest-card">
+                        <h4>Connect with me</h4>
+                        <p><i class="fa-regular fa-envelope"></i> Email:</p>
+                        <p>chhetridipesh91@gmail.com</p>
+                        <br>
+                        <p><i class="fa-solid fa-phone"></i> Phone:</p>
+                        <p>+977 9749455812</p>
+                        <br>
+                        <p>Follow me on:</p>
+                        <div class="links">
+                        <a href="https://www.instagram.com/dipeshchhetri66/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/dipesh.chhetri.3597" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
             </section>
         </main>
         
@@ -136,5 +208,6 @@
             &copy; Copyright 2025 Dipesh K. Chhetri. All rights reserved
         </footer>
     </div>
+<script src="script.js"></script>
 </body>
 </html>
