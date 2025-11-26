@@ -36,7 +36,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
 
 
 // hamburger
-// HAMBURGER MENU (class-based toggle — safer)
+
 const hamburger = document.getElementById("hamburger");
 const sideMenu = document.querySelector("menu");
 
