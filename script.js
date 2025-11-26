@@ -33,3 +33,13 @@ document.getElementById("contactForm").addEventListener("submit", function(e){
     // If everything is correct:
     success.innerHTML = "Message sent successfully!";
 });
+
+
+// hamburger
+// HAMBURGER MENU (class-based toggle — safer)
+const hamburger = document.getElementById("hamburger");
+const sideMenu = document.querySelector("menu");
+
+hamburger.addEventListener("click", () => {
+    sideMenu.classList.toggle("menu-open");
+});

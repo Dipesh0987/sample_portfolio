@@ -63,6 +63,13 @@ header {
     text-align: center;
 }
 
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
 menu {
     grid-area: menu;
     background-color: rgba(26, 26, 93, 0.8);
@@ -70,6 +77,12 @@ menu {
     position: sticky;
     top: 80px;
     height: fit-content;
+    display: block;
+    z-index: 50;
+}
+
+.hamburger{
+    display: none;
 }
 
 menu a {
@@ -248,11 +261,41 @@ footer {
             "main"
             "footer";
     }
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 22px;
+        font-size: 1.6rem;
+        color: white;
+        cursor: pointer;
+        z-index: 200;
+    }
 
     menu {
         display: none;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        background-color: rgba(26, 26, 93, 0.95);
+        padding: 1rem 0;
+        z-index: 150;
+        text-align: center;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+        max-height: 0;               /* collapsed state for transition */
+        overflow: hidden;
+        transition: max-height 0.35s ease;
     }
 
+    menu.menu-open{
+        display: block;
+        max-height: 600px;
+    }
+     menu a{
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+     }
     .logo h1 {
         font-size: 1.5rem;
     }
